@@ -9,7 +9,7 @@ $(document).ready(function() {
 	// -------------------------------------------------------------
 	(function () {
 		var $frame  = $('#media');
-		var $slidee = $frame.children('ul').eq(0);
+		var $slidee = $frame.find('.media-sly-nav');
 		var $wrap   = $frame.parent();
 
 		// Call Sly on frame
