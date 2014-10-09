@@ -8,7 +8,7 @@ $(document).ready(function() {
 	//   Basic Navigation
 	// -------------------------------------------------------------
 	(function () {
-		var $frame  = $('#media');
+		var $frame  = $('#media-sly');
 		var $slidee = $frame.find('.media-sly-nav');
 		var $wrap   = $frame.parent();
 
