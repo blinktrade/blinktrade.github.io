@@ -1,0 +1,17 @@
+.mission {
+    background-color:#fcf8de;
+    font-size:18px;
+    padding:36px 0;
+    text-align:center;
+
+}
+
+.mission__wrapper {
+    > :last-child {
+        margin-bottom:0;
+    }
+}
+
+.mission__title {
+    line-height:1;
+}

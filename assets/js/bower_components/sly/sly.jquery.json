@@ -1,0 +1,28 @@
+{
+	"name": "sly",
+	"title": "Sly",
+	"description": "One-directional scrolling with item based navigation support.",
+	"version": "1.2.5",
+	"keywords": [
+		"scrolling",
+		"items",
+		"touch"
+	],
+	"author": {
+		"name": "Darsain",
+		"url": "http://darsa.in"
+	},
+	"bugs": "https://github.com/darsain/sly/issues",
+	"homepage": "http://darsa.in/sly",
+	"docs": "https://github.com/darsain/sly/wiki",
+	"download": "https://raw.github.com/darsain/sly/master/dist/sly.min.js",
+	"dependencies": {
+		"jquery": ">=1.7"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+	]
+}

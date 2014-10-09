@@ -1,0 +1,10 @@
+/*
+* _main.scss
+**/
+
+html{
+    font:#{($font-size/16px)*1em}/#{$line-height / $font-size} $sans-serif;
+    color:#666;
+    overflow-y:scroll;
+    min-height:100%;
+}
