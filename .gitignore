@@ -3,3 +3,5 @@
 *.swn
 *.swm
 .sass-cache/
+.DS_Store
+Thumbs.db
