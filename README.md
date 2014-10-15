@@ -82,3 +82,6 @@ _More information about Jekyll's file structure [here](https://github.com/mojomb
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
+## License
+[GNU GENERAL PUBLIC LICENSE](https://github.com/randsonjs/blinktrade.github.io/blob/master/LICENSE) © Blinktrade, Inc.
