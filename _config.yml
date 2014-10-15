@@ -3,7 +3,7 @@ title: 'Blinktrade, Inc.'
 email: contact@blinktrade.com
 description: "Blinktrade Landing Page"
 baseurl: ""
-url: "http://dev.blinktrade.com"
+url: "http://blinktrade.com"
 
 # Build settings
 markdown: kramdown
