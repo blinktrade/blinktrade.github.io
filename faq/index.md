@@ -3,4 +3,4 @@ layout: page
 title: FAQ
 ---
 
-comming soon
+coming soon
