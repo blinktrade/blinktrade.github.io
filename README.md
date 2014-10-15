@@ -39,3 +39,38 @@ You'll have access to the website at `localhost:4000` :D
 ![IE](https://cloud.githubusercontent.com/assets/398893/3528325/20373e76-078e-11e4-8e3a-1cb86cf506f0.png "Internet Explorer") | ![Chrome](https://cloud.githubusercontent.com/assets/398893/3528328/23bc7bc4-078e-11e4-8752-ba2809bf5cce.png "Google Chrome") | ![Firefox](https://cloud.githubusercontent.com/assets/398893/3528329/26283ab0-078e-11e4-84d4-db2cf1009953.png "Firefox") | ![Opera](https://cloud.githubusercontent.com/assets/398893/3528330/27ec9fa8-078e-11e4-95cb-709fd11dac16.png "Opera") | ![Safari](https://cloud.githubusercontent.com/assets/398893/3528331/29df8618-078e-11e4-8e3e-ed8ac738693f.png "Safari")
 --- | --- | --- | --- | --- |
 IE 8+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
+
+## File Structure
+
+The file structure for the project is organized in the following way:
+
+```
+.
+|-- _includes
+|-- _layouts
+|-- _posts
+|-- _config.yml
+`-- index.html
+```
+
+### [_includes](https://github.com/randsonjs/blinktrade.github.io/_includes)
+
+They're blocks of code used to generate the main page of the site (index.html).
+
+### [_layouts](https://github.com/randsonjs/blinktrade.github.io/_layouts)
+
+Here you'll find the default template of the application.
+
+### [_posts](https://github.com/randsonjs/blinktrade.github.io/_posts)
+
+Here you'll find a list of files for each post.
+
+### [_config.yml](https://github.com/randsonjs/blinktrade.github.io/_config.yml)
+
+It stores most of the settings of the application.
+
+### [index.html](https://github.com/randsonjs/blinktrade.github.io/index.html)
+
+It's the file responsible for all application sections.
+
+_More information about Jekyll's file structure [here](https://github.com/mojombo/jekyll/wiki/Usage)._
