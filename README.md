@@ -1,7 +1,7 @@
 [blinktrade.com](http://blinktrade.com)
 =============
 
-Blinktrade landing page
+Blinktrade Landing Page
 
 ## How it works?
 
