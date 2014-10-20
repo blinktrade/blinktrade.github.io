@@ -6,7 +6,8 @@
     > .wrapper {
         position:relative;
     }
-  .rslides_nav {
+
+    .rslides_nav {
 		color: transparent;
         display:block;
 		font-size: 1px;
@@ -52,7 +53,6 @@
 	list-style: none;
 	height: 387px;
 	margin: 20px 0 0;
-	padding-top: 70px;
 
     > li {
         display:none;
@@ -64,6 +64,10 @@
 
     @include media-query(lap) {
         padding-top:30px;
+    }
+
+    @include media-query(desk) {
+        padding-top: 70px;
     }
 }
 
