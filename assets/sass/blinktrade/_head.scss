@@ -1,22 +1,22 @@
 .head {
-    background-color:#dcd19c;
-    padding-top:24px;
+	background-color: #dcd19c;
+	padding-top: 24px;
 }
 
 .head--inner {
-    padding-bottom:24px;
+	padding-bottom: 24px;
 }
 
 .head-nav {
-    @include cf;
+	@include cf;
 
-    font-family: 'Montserrat', sans-serif;
-    float:right;
-    list-style:none;
-    margin:16px 0 0;
+	font-family: 'Montserrat', sans-serif;
+	float: right;
+	list-style: none;
+	margin: 16px 0 0;
 
-    > li {
-        float:left;
-        margin-left:20px;
-    }
+	> li {
+		float: left;
+		margin-left: 20px;
+	}
 }

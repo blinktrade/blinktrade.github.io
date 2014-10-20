@@ -1,78 +1,78 @@
 .foot {
-    background-color:#a3a17b;
-    color:#fff;
-    font-size:17px;
-    text-align:right;
+	background-color: #a3a17b;
+	color: #fff;
+	font-size: 17px;
+	text-align: right;
 
-    a {
-        color:#fff;
+	a {
+		color: #fff;
 
-        &:hover {
-            color:rgba(#fff, .7);
-        }
-    }
+		&:hover {
+			color: rgba(#fff, .7);
+		}
+	}
 }
 
 .foot__wrapper {
-    background: url(../img/little_peruvian.png) no-repeat 30px bottom;
-    padding:54px 0 24px;
+	background: url(../img/little_peruvian.png) no-repeat 30px bottom;
+	padding: 54px 0 24px;
 }
 
 .foot-nav-top {
-    @include cf;
+	@include cf;
 
-    line-height:1;
-    list-style:none;
-    margin-bottom:24px;
+	line-height: 1;
+	list-style: none;
+	margin-bottom: 24px;
 
-    > li {
-        border-left:1px solid #e5e1a3;
-        display:inline-block;
-        padding:0 14px;
+	> li {
+		border-left: 1px solid #e5e1a3;
+		display: inline-block;
+		padding: 0 14px;
 
-        &:first-child {
-            border-left:none;
-            padding-left:0;
-        }
+		&:first-child {
+			border-left: none;
+			padding-left: 0;
+		}
 
-        &:last-child {
-            padding-right:0;
-        }
-    }
+		&:last-child {
+			padding-right: 0;
+		}
+	}
 }
 
 .foot-copyright {
-    font-weight:bold;
-    margin-bottom:12px;
+	font-weight: bold;
+	margin-bottom: 12px;
 }
 
 .foot-nav-bot {
-    @include cf;
+	@include cf;
 
-    line-height:1;
-    list-style:none;
-    margin-bottom:24px;
+	line-height: 1;
+	list-style: none;
+	margin-bottom: 24px;
 
-    > li {
-        border-left:1px solid #e5e1a3;
-        display:inline-block;
-        padding:0 14px;
+	> li {
+		border-left: 1px solid #e5e1a3;
+		display: inline-block;
+		padding: 0 14px;
 
-        &:first-child {
-            border-left:none;
-            padding-left:0;
-        }
+		&:first-child {
+			border-left: none;
+			padding-left: 0;
+		}
 
-        &:last-child {
-            padding-right:0;
-        }
-    }
+		&:last-child {
+			padding-right:0;
+		}
+	}
 }
 
 .foot-front-end {
-    font-size:11px;
+	font-size: 11px;
 }
 
 .foot-front-end__link {
-    opacity:.6
+	opacity: .6;
 }
