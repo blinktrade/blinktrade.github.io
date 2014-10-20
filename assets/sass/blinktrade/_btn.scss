@@ -1,6 +1,6 @@
 .btn {
-    @include inline-block(middle);
-    @include border-radius(3px);
+	@include inline-block(middle);
+	@include border-radius(3px);
 
     background-color:#494949;
     color:#fff;
@@ -20,19 +20,19 @@
 }
 
 .btn--primary {
-    background-color:#633614;
+	background-color:#633614;
 
-    &:hover {
-        background-color:darken(#633614, 4%);
-        color:#fff;
-    }
+	&:hover {
+		background-color: darken(#633614, 4%);
+		color: #fff;
+	}
 }
 
 .btn--secondary {
-    background-color:#ce6117;
+	background-color: #ce6117;
 
-    &:hover {
-        background-color:darken(#ce6117, 4%);
-        color:#fff;
-    }
+	&:hover {
+		background-color: darken(#ce6117, 4%);
+		color: #fff;
+	}
 }

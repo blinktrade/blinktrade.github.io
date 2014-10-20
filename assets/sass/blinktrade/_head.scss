@@ -1,14 +1,14 @@
 .head {
-    background-color:#dcd19c;
-    padding-top:24px;
+	background-color: #dcd19c;
+	padding-top: 24px;
 }
 
 .head--inner {
-    padding-bottom:24px;
+	padding-bottom: 24px;
 }
 
 .head-nav {
-    @include cf;
+	@include cf;
 
     font-family: 'Montserrat', sans-serif;
     list-style:none;

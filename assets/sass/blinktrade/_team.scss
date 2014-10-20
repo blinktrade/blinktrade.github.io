@@ -1,14 +1,14 @@
 .team {
-    background-color:#f4f4f4;
-    background-image:url(../img/team_border.png);
-    background-position:center bottom;
-    background-repeat:repeat-x;
-    font-size:18px;
-    padding:60px 0 66px;
+	background-color: #f4f4f4;
+	background-image: url(../img/team_border.png);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	font-size: 18px;
+	padding: 60px 0 66px;
 }
 
 .team__head {
-    text-align:center;
+	text-align: center;
 }
 
 .team__body {
@@ -20,8 +20,8 @@
 }
 
 .team-item__head {
-    text-align:center;
-    margin-bottom:12px;
+	text-align: center;
+	margin-bottom: 12px;
 }
 
 .team-item__img {
@@ -31,12 +31,12 @@
 }
 
 .team-item__title {
-    text-align:center;
+	text-align: center;
 
-    > span {
-        display:block;
-        font-weight:normal;
-    }
+	> span {
+		display: block;
+		font-weight: normal;
+	}
 }
 
 .team-item__body {
