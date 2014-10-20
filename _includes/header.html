@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} {{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} &dash; {% endif %} {{ site.title }}</title>
 
   <!-- Meta -->
   <meta charset="UTF-8">
@@ -34,7 +34,7 @@
   <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/blinktrade.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/blinktrade.css" media="all" />
 </head>
 <body>
 
@@ -45,7 +45,7 @@
             <!-- .layout -->
             <div class="layout">
                 <!-- .layout__item -->
-                <div class="layout__item one-half">
+                <div class="layout__item one-whole desk--one-half">
                     <!-- .logo -->
                     <a class="logo" href="{{ site.url }}" title="">
                         <img src="{{ site.url }}/assets/img/blinktrade.png" alt="" />
@@ -55,156 +55,139 @@
                 <!-- /.layout__item -->
 
                 <!-- .layout__item -->
-                <nav class="layout__item one-half cf">
-                    <!-- .head-nav -->
-                    <ul class="head-nav">
-                        <li>
-                            <a href="{{ site.url }}#mission" title="">Mission</a>
-                        </li>
-                        <li>
-                            <a href="{{ site.url }}#media" title="">Media</a>
-                        </li>
-                        <li>
-                            <a href="{{ site.url }}#started" title="">Get started</a>
-                        </li>
-                        <li>
-                            <a href="{{ site.url }}#team" title="">Team</a>
-                        </li>
-                        <li>
-                            <a href="http://blog.blinktrade.com" title="">Blog</a>
-                        </li>
-                    </ul>
-                    <!-- /.head-nav -->
+                <nav class="layout__item one-whole desk--one-half cf">
+                    {% include nav.html %}
                 </nav>
                 <!-- /.layout__item -->
             </div>
             <!-- /.layout -->
+        </div>
+        <!-- /.wrapper -->
 
             <!-- .slide -->
             <div class="slide">
-                <!-- .slide-nav -->
-                <ul class="slide-nav">
-                    <li>
-                        <!-- .slide-nav-item -->
-                        <div class="slide-nav-item">
-                            <!-- .slide-nav-item__body -->
-                            <div class="slide-nav-item__body">
-                                <!-- .slide-nav-item__title -->
-                                <h1 class="slide-nav-item__title gamma">
-                                    Instant deposits to verified accounts allow<br/> traders to deposit bitcoins only when they<br/> want to trade.
-                                </h1>
-                                <!-- /.slide-nav-item__title -->
-                            </div>
-                            <!-- /.slide-nav-item__body -->
+                <div class="wrapper">
+                    <!-- .slide-nav -->
+                    <ul class="slide-nav">
+                        <li>
+                            <!-- .slide-nav-item -->
+                            <div class="slide-nav-item">
+                                <!-- .slide-nav-item__body -->
+                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
+                                    <!-- .slide-nav-item__title -->
+                                    <h1 class="slide-nav-item__title gamma">
+                                        Instant deposits to verified accounts allow traders to deposit bitcoins only when they want to trade.
+                                    </h1>
+                                    <!-- /.slide-nav-item__title -->
+                                </div>
+                                <!-- /.slide-nav-item__body -->
 
-                            <!-- .slide-nav-item__foot -->
-                            <div class="slide-nav-item__foot">
-                                <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
-                                <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                <!-- .slide-nav-item__foot -->
+                                <div class="slide-nav-item__foot">
+                                    <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
+                                    <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                </div>
+                                <!-- /.slide-nav-item__foot -->
                             </div>
-                            <!-- /.slide-nav-item__foot -->
-                        </div>
-                        <!-- /.slide-nav-item -->
-                    </li>
-                    <li>
-                        <!-- .slide-nav-item -->
-                        <div class="slide-nav-item">
-                            <!-- .slide-nav-item__body -->
-                            <div class="slide-nav-item__body">
-                                <!-- .slide-nav-item__title -->
-                                <h1 class="slide-nav-item__title gamma">
-                                    An <strong>open source</strong> bitcoin exchange.<br /> Start your own bitcoin exchange<br/> today.  </h1>
-                                <!-- /.slide-nav-item__title -->
-                            </div>
-                            <!-- /.slide-nav-item__body -->
+                            <!-- /.slide-nav-item -->
+                        </li>
+                        <li>
+                            <!-- .slide-nav-item -->
+                            <div class="slide-nav-item">
+                                <!-- .slide-nav-item__body -->
+                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
+                                    <!-- .slide-nav-item__title -->
+                                    <h1 class="slide-nav-item__title gamma">
+                                        An <strong>open source</strong> bitcoin exchange. Start your own bitcoin exchange today.  </h1>
+                                    <!-- /.slide-nav-item__title -->
+                                </div>
+                                <!-- /.slide-nav-item__body -->
 
-                            <!-- .slide-nav-item__foot -->
-                            <div class="slide-nav-item__foot">
-                                <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
-                                <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                <!-- .slide-nav-item__foot -->
+                                <div class="slide-nav-item__foot">
+                                    <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
+                                    <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                </div>
+                                <!-- /.slide-nav-item__foot -->
                             </div>
-                            <!-- /.slide-nav-item__foot -->
-                        </div>
-                        <!-- /.slide-nav-item -->
-                    </li>
-                    <li>
-                        <!-- .slide-nav-item -->
-                        <div class="slide-nav-item">
-                            <!-- .slide-nav-item__body -->
-                            <div class="slide-nav-item__body">
-                                <!-- .slide-nav-item__title -->
-                                <h1 class="slide-nav-item__title gamma">
-                                    <strong>No REST, no HTTP,</strong> no Workarounds that<br /> open security breaches. Just a simple<br />websockets API based on the FixProtocol
-                                </h1>
-                                <!-- /.slide-nav-item__title -->
-                            </div>
-                            <!-- /.slide-nav-item__body -->
+                            <!-- /.slide-nav-item -->
+                        </li>
+                        <li>
+                            <!-- .slide-nav-item -->
+                            <div class="slide-nav-item">
+                                <!-- .slide-nav-item__body -->
+                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
+                                    <!-- .slide-nav-item__title -->
+                                    <h1 class="slide-nav-item__title gamma">
+                                        <strong>No REST, no HTTP,</strong> no Workarounds that open security breaches. Just a simplewebsockets API based on the FixProtocol
+                                    </h1>
+                                    <!-- /.slide-nav-item__title -->
+                                </div>
+                                <!-- /.slide-nav-item__body -->
 
-                            <!-- .slide-nav-item__foot -->
-                            <div class="slide-nav-item__foot">
-                                <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
-                                <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                <!-- .slide-nav-item__foot -->
+                                <div class="slide-nav-item__foot">
+                                    <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
+                                    <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                </div>
+                                <!-- /.slide-nav-item__foot -->
                             </div>
-                            <!-- /.slide-nav-item__foot -->
-                        </div>
-                        <!-- /.slide-nav-item -->
-                    </li>
-                    <li>
-                        <!-- .slide-nav-item -->
-                        <div class="slide-nav-item">
-                            <!-- .slide-nav-item__body -->
-                            <div class="slide-nav-item__body">
-                                <!-- .slide-nav-item__title -->
-                                <h1 class="slide-nav-item__title gamma">
-                                    <strong>Transparent</strong> just like Bitcoin.<br /> 100% open source, no anonymous/hidden orders<br /> that just open doors to market manipulation.
-                                </h1>
-                                <!-- /.slide-nav-item__title -->
-                            </div>
-                            <!-- /.slide-nav-item__body -->
+                            <!-- /.slide-nav-item -->
+                        </li>
+                        <li>
+                            <!-- .slide-nav-item -->
+                            <div class="slide-nav-item">
+                                <!-- .slide-nav-item__body -->
+                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
+                                    <!-- .slide-nav-item__title -->
+                                    <h1 class="slide-nav-item__title gamma">
+                                        <strong>Transparent</strong> just like Bitcoin. 100% open source, no anonymous/hidden orders that just open doors to market manipulation.
+                                    </h1>
+                                    <!-- /.slide-nav-item__title -->
+                                </div>
+                                <!-- /.slide-nav-item__body -->
 
-                            <!-- .slide-nav-item__foot -->
-                            <div class="slide-nav-item__foot">
-                                <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
-                                <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                <!-- .slide-nav-item__foot -->
+                                <div class="slide-nav-item__foot">
+                                    <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
+                                    <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                </div>
+                                <!-- /.slide-nav-item__foot -->
                             </div>
-                            <!-- /.slide-nav-item__foot -->
-                        </div>
-                        <!-- /.slide-nav-item -->
-                    </li>
-                    <li>
-                        <!-- .slide-nav-item -->
-                        <div class="slide-nav-item">
-                            <!-- .slide-nav-item__body -->
-                            <div class="slide-nav-item__body">
-                                <!-- .slide-nav-item__title -->
-                                <h1 class="slide-nav-item__title gamma">
-                                    <strong>Fast</strong>, 35 milliseconds order
-                                    ACK time.<br /> 20 months of development<br
-                                    /> Built with the same architecture of the NYSE.
-                                </h1>
-                                <!-- /.slide-nav-item__title -->
-                            </div>
-                            <!-- /.slide-nav-item__body -->
+                            <!-- /.slide-nav-item -->
+                        </li>
+                        <li>
+                            <!-- .slide-nav-item -->
+                            <div class="slide-nav-item">
+                                <!-- .slide-nav-item__body -->
+                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
+                                    <!-- .slide-nav-item__title -->
+                                    <h1 class="slide-nav-item__title gamma">
+                                        <strong>Fast</strong>, 35 milliseconds order
+                                        ACK time. 20 months of development Built with the same architecture of the NYSE.
+                                    </h1>
+                                    <!-- /.slide-nav-item__title -->
+                                </div>
+                                <!-- /.slide-nav-item__body -->
 
-                            <!-- .slide-nav-item__foot -->
-                            <div class="slide-nav-item__foot">
-                                <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
-                                <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                <!-- .slide-nav-item__foot -->
+                                <div class="slide-nav-item__foot">
+                                    <a class="btn btn--primary" href="https://demo.blinktrade.com/" title="">SEE OUR DEMO</a>
+                                    <a class="btn btn--secondary" href="#started" title="">GET STARTED</a>
+                                </div>
+                                <!-- /.slide-nav-item__foot -->
                             </div>
-                            <!-- /.slide-nav-item__foot -->
-                        </div>
-                        <!-- /.slide-nav-item -->
-                    </li>
-                </ul>
-                <!-- /.slide-nav -->
+                            <!-- /.slide-nav-item -->
+                        </li>
+                    </ul>
+                    <!-- /.slide-nav -->
 
-                <!-- .slide-pause -->
-                <div class="slide-pause"></div>
-                <!-- /.slide-pause -->
+                    <!-- .slide-pause -->
+                    <div class="slide-pause"></div>
+                    <!-- /.slide-pause -->
+                </div>
             </div>
             <!-- /.slide -->
-        </div>
-        <!-- /.wrapper -->
     </header>
 	<!-- /.head -->
 

@@ -11,6 +11,14 @@
     text-align:center;
 }
 
+.team__body {
+    text-align:center;
+
+    @include media-query(desk) {
+        text-align:left;
+    }
+}
+
 .team-item__head {
     text-align:center;
     margin-bottom:12px;
@@ -19,6 +27,7 @@
 .team-item__img {
     display:inline-block;
     margin-bottom:-6px;
+    max-width:100%;
 }
 
 .team-item__title {
@@ -32,4 +41,8 @@
 
 .team-item__body {
     padding:0 24px;
+
+    @include media-query(portable) {
+        padding:0;
+    }
 }

@@ -12,6 +12,11 @@
     outline:none;
     padding:23px 34px;
     text-shadow:1px 1px 1px rgba(#000, .7);
+
+    @include media-query(palm) {
+        font-size:15px;
+        padding:16px 14px;
+    }
 }
 
 .btn--primary {

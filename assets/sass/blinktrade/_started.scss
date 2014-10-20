@@ -3,7 +3,7 @@
     border-bottom:6px solid #a3a17b;
     color:#1e1c1b;
     font-size:18px;
-    padding:60px 0 90px;
+    padding:60px 0 66px;
 }
 
 .started__head {
@@ -21,6 +21,13 @@
 }
 
 .started__body {
+    @include media-query(portable) {
+        text-align:center;
+    }
+}
+
+.started-item {
+    margin-bottom:24px;
 }
 
 .started-item__head {
@@ -31,11 +38,20 @@
 .started-item__img {
     display:inline-block;
     margin-bottom:-6px;
+    max-width:100%;
 }
 
 .started-item__body {
     color:#210b09;
     padding:0 24px;
+
+    @include media-query(portable) {
+        padding:0;
+
+        > :last-child {
+            margin-bottom:12px;
+        }
+    }
 }
 
 .started-item__title {

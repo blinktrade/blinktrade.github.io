@@ -2,7 +2,10 @@
     background-image:url(../img/header_art.jpg);
     background-position:center bottom;
     background-repeat:no-repeat;
-    position:relative;
+
+    > .wrapper {
+        position:relative;
+    }
 
     .rslides_nav {
         color:transparent;
@@ -15,18 +18,30 @@
 
         &.prev {
             background:url(../img/slide_prev.png) no-repeat;
-            left:423px;
+            left:30%;
         }
 
         &.next {
             background:url(../img/slide_next.png) no-repeat;
-            right:423px;
+            right:30%;
         }
     }
 
     &:hover {
         .slide-pause {
             display:block;
+        }
+    }
+
+    @include media-query(desk) {
+        .rslides_nav {
+            &.prev {
+                left:423px;
+            }
+
+            &.next {
+                right:423px;
+            }
         }
     }
 }
@@ -42,17 +57,41 @@
     > li {
         display:none;
     }
+
+    @include media-query(palm) {
+        padding-top:40px;
+    }
+
+    @include media-query(lap) {
+        padding-top:30px;
+    }
 }
 
 .slide-nav-item {
+    @include media-query(palm) {
+        text-align:center;
+    }
 }
 
 .slide-nav-item__title {
     color:#1e1c1b;
     font-family: 'Titillium Web', sans-serif;
+    font-size:29px;
     font-weight:normal;
     line-height:1.2;
     margin-bottom:36px;
+
+    @include media-query(palm) {
+        font-size:25px;
+    }
+
+    @include media-query(lap) {
+        font-size:27px;
+    }
+
+    @include media-query(portable) {
+        margin-bottom:24px;
+    }
 }
 
 .slide-pause {

@@ -19,6 +19,15 @@
 
 
 // modifications
+.layout--ib {
+    > .layout__item {
+        display:inline-block;
+        float:none;
+        margin-right:-0.28em;
+        vertical-align:top;
+    }
+}
+
 .layout--double {
     margin-left:-($base-spacing * 2);
 

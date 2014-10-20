@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} {{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} &dash; {% endif %} {{ site.title }}</title>
 
   <!-- Meta -->
   <meta charset="UTF-8">
@@ -34,7 +34,7 @@
   <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/blinktrade.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/blinktrade.css" media="all" />
 </head>
 <body>
 
@@ -45,7 +45,7 @@
             <!-- .layout -->
             <div class="layout">
                 <!-- .layout__item -->
-                <div class="layout__item one-half">
+                <div class="layout__item one-whole desk--one-half">
                     <!-- .logo -->
                     <a class="logo" href="{{ site.url }}" title="">
                         <img src="{{ site.url }}/assets/img/blinktrade.png" alt="" />
@@ -55,26 +55,8 @@
                 <!-- /.layout__item -->
 
                 <!-- .layout__item -->
-                <nav class="layout__item one-half cf">
-                    <!-- .head-nav -->
-                    <ul class="head-nav">
-                        <li>
-                            <a href="{{ site.url }}#mission" title="">Mission</a>
-                        </li>
-                        <li>
-                            <a href="{{ site.url }}#media" title="">Media</a>
-                        </li>
-                        <li>
-                            <a href="{{ site.url }}#started" title="">Get started</a>
-                        </li>
-                        <li>
-                            <a href="{{ site.url }}#team" title="">Team</a>
-                        </li>
-                        <li>
-                            <a href="http://blog.blinktrade.com" title="">Blog</a>
-                        </li>
-                    </ul>
-                    <!-- /.head-nav -->
+                <nav class="layout__item one-whole desk--one-half cf">
+                    {% include nav.html %}
                 </nav>
                 <!-- /.layout__item -->
             </div>

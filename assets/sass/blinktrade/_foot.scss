@@ -11,11 +11,21 @@
             color:rgba(#fff, .7);
         }
     }
+
+    @include media-query(palm) {
+        text-align:center;
+    }
 }
 
 .foot__wrapper {
-    background: url(../img/little_peruvian.png) no-repeat 30px bottom;
+    background: url(../img/little_peruvian.png) no-repeat;
+    background-position: 30px bottom;
     padding:54px 0 24px;
+
+    @include media-query(palm) {
+        background-position: center bottom;
+        padding-bottom:200px;
+    }
 }
 
 .foot-nav-top {
@@ -23,7 +33,7 @@
 
     line-height:1;
     list-style:none;
-    margin-bottom:24px;
+    margin-left:24px;
 
     > li {
         border-left:1px solid #e5e1a3;
@@ -51,12 +61,16 @@
 
     line-height:1;
     list-style:none;
-    margin-bottom:24px;
+    margin-left:0;
 
     > li {
         border-left:1px solid #e5e1a3;
         display:inline-block;
         padding:0 14px;
+
+        > a {
+            display:block;
+        }
 
         &:first-child {
             border-left:none;
@@ -65,6 +79,21 @@
 
         &:last-child {
             padding-right:0;
+        }
+    }
+
+    @include media-query(palm) {
+        > li {
+            border-left:none;
+            display:block;
+            padding:0;
+
+            > a {
+                padding:6px 12px;
+
+                &:hover {
+                }
+            }
         }
     }
 }
