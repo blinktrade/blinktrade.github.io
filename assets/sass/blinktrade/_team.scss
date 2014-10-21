@@ -13,10 +13,6 @@
 
 .team__body {
     text-align:center;
-
-    @include media-query(desk) {
-        text-align:left;
-    }
 }
 
 .team-item__head {
@@ -44,5 +40,9 @@
 
     @include media-query(portable) {
         padding:0;
+    }
+
+    @include media-query(desk) {
+        text-align:left;
     }
 }
