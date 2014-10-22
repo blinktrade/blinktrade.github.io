@@ -39,5 +39,9 @@ $(document).ready(function() {
 			prevPage: $wrap.find('.prevPage'),
 			nextPage: $wrap.find('.nextPage')
 		});
+
+        $(window).resize(function() {
+            $frame.sly('reload');
+        });
 	}());
 });
