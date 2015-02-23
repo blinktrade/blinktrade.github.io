@@ -5,4 +5,8 @@
     @include media-query(desk) {
         width:960px;
     }
+
+    @include media-query(desk-wide) {
+        width:1080px;
+    }
 }

@@ -1,12 +1,21 @@
 .started {
-    background-color:#e9e5ca;
-    border-bottom:6px solid #a3a17b;
+    background-color:#e4dec6;
+    border-bottom:6px solid #93874f;
     color:#1e1c1b;
-    font-size:18px;
+    font-size:17px;
     padding:60px 0 66px;
+
+    a {
+        color: #185653;
+
+        &:hover {
+            color: darken(#185653, 6%);
+        }
+    }
 }
 
 .started__head {
+    font-size: 18px;
 	text-align: center;
 	margin-bottom: 36px;
 
@@ -21,9 +30,7 @@
 }
 
 .started__body {
-    @include media-query(portable) {
-        text-align:center;
-    }
+    text-align:center;
 }
 
 .started-item {
@@ -61,4 +68,23 @@
 .started-item__foot {
 	font-weight: bold;
 	padding: 0 24px;
+}
+
+.started-item-link {
+    @include cf;
+    display: inline-block;
+}
+
+.started-item-link__body {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.started-item-link__icon {
+    background: url(../img/getstarted_arrow.png) no-repeat;
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 6px;
+    width: 20px;
 }

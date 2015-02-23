@@ -1,5 +1,5 @@
 .foot {
-    background-color:#a3a17b;
+    background-color:#2b4946;
     color:#fff;
     font-size:17px;
     text-align:right;
@@ -18,7 +18,7 @@
 }
 
 .foot__wrapper {
-    background: url(../img/little_peruvian.png) no-repeat;
+    background: url(../img/footer_llamas.png) no-repeat;
     background-position: 30px bottom;
     padding:54px 0 24px;
 
@@ -36,7 +36,7 @@
     margin-left:0;
 
     > li {
-        border-left:1px solid #e5e1a3;
+        border-left:1px solid #538681;
         display:inline-block;
         padding:0 14px;
 
@@ -48,6 +48,10 @@
         &:last-child {
             padding-right:0;
         }
+    }
+
+    @include media-query(desk) {
+        margin-bottom: 32px;
     }
 }
 
@@ -64,7 +68,7 @@
     margin-left:0;
 
     > li {
-        border-left:1px solid #e5e1a3;
+        border-left:1px solid #538681;
         display:inline-block;
         padding:0 14px;
 

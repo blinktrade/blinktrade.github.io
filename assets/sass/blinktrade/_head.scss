@@ -1,6 +1,10 @@
 .head {
-	background-color: #dcd19c;
+	background-color: #f0dab0;
 	padding-top: 24px;
+
+    @include media-query(desk) {
+        padding-top: 42px;
+    }
 }
 
 .head--inner {
@@ -10,13 +14,16 @@
 .head-nav {
 	@include cf;
 
-    font-family: 'Montserrat', sans-serif;
     list-style:none;
     margin:0;
 
     > li {
         > a {
+            color: #73350a;
             display:block;
+            &:hover {
+                color: darken(#73350a, 6%);
+            }
         }
     }
 
@@ -40,12 +47,14 @@
     }
 
     @include media-query(desk) {
+        font-size: 18px;
+        font-weight: 700;
         float:right;
-        margin:16px 0 0;
+        margin:0;
 
         > li {
             float:left;
-            margin-left:20px;
+            margin-left:24px;
         }
     }
 }

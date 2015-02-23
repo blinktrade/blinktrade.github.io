@@ -3,7 +3,7 @@
 	background-image: url(../img/team_border.png);
 	background-position: center bottom;
 	background-repeat: repeat-x;
-	font-size: 18px;
+	font-size: 17px;
 	padding: 60px 0 66px;
 }
 
@@ -36,13 +36,7 @@
 }
 
 .team-item__body {
-    padding:0 24px;
-
     @include media-query(portable) {
         padding:0;
-    }
-
-    @include media-query(desk) {
-        text-align:left;
     }
 }
