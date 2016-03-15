@@ -1,9 +1,10 @@
 # Site settings
-title: 'Blinktrade, Inc.'
+title: 'BlinkTrade Inc.'
 email: contact@blinktrade.com
-description: "Blinktrade Landing Page"
+description: "BlinkTrade - Open your own bitcoin exchange"
+keywords: "BlinkTrade, Bitcoin, Exchange, Open Source"
 baseurl: ""
-url: "//blinktrade.com"
+url: "//localhost:4000"
 
 # Build settings
 markdown: kramdown
@@ -15,3 +16,7 @@ paginate: 5
 paginate_path: "blog/page:num"
 
 permalink: /:title/
+
+sass:
+  sass_dir: assets/sass
+  style: :compressed

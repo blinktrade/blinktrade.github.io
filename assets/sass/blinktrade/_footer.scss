@@ -1,0 +1,8 @@
+.media-body {
+  position: relative;
+  left: -20px;
+
+  @include media-breakpoint-up(md) {
+    left: 65px;
+  }
+}

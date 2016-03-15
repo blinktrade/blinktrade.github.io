@@ -1,207 +1,123 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>{% if page.title %}{{ page.title }} &dash; {% endif %} {{ site.title }}</title>
+    <title>{{ site.title }}</title>
 
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ Site.keywords }}">
+    <meta name='author' content='BlinkTrade'>
+    <meta name='revisit-after' content='5 days'>
 
     <!-- Facebook -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} &dash;{% endif %} {{ site.title }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}">
-    <meta property="og:image" content="{{ site.url }}/assets/img/fb-share.png">
-    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property='og:locate' content='en_US'>
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:site_name" content="blinktrade.com">
+    <meta property="og:url" content="https://blinktrade.com">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/blinktrade-cover.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ site.description }}">
 
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:title' content='{{ site.title }}'>
+    <meta name='twitter:description' content='{{ site.description }}'>
+    <meta name='twitter:image' content='https://blinktrade.com/assets/img/blinktrade-cover.jpg'>
+    <meta name='twitter:site' content='blinktrade.com'>
+
+    <link rel="canonical"  href='https://blinktrade.com'>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ site.url }}/assets/img/favicon.png">
+    <link rel="shortcut icon" href="{{ site.url }}/assets/img/favicon.ico">
 
     <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/font-awesome.min.css" type="text/css" media="all">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/blinktrade.css" media="all" />
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/owl.theme.default.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/blinktrade.css" media="all" type="text/css" />
+
 </head>
 <body>
+    <!-- Navigation
+    ================================================== -->
 
-	<!-- .head -->
-    <header class="head" style="">
-        <!-- .wrapper -->
-        <div class="wrapper">
-            <!-- .layout -->
-            <div class="layout">
-                <!-- .layout__item -->
-                <div class="layout__item one-whole desk--one-half">
-                    <!-- .logo -->
-                    <a class="logo" href="{{ site.url }}" title="Blinktrade">
-                        <img src="{{ site.url }}/assets/img/blinktrade.png" alt="Blinktrade" />
-                    </a>
-                    <!-- /.logo -->
-                </div>
-                <!-- /.layout__item -->
-
-                <!-- .layout__item -->
-                <nav class="layout__item one-whole desk--one-half cf">
-                    {% include nav.html %}
-                </nav>
-                <!-- /.layout__item -->
-            </div>
-            <!-- /.layout -->
+    <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand scroll-top" href="#">
+          <img src="{{ site.url }}/assets/img/logo-p-white.png" class="logo" alt="Blinktrade" />
+        </a>
+        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+        &#9776;
+      </a>
+        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+        </a>
+        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item nav-item-toggable btn-getstarted">
+              <a class="nav-link" href="#">Get Started<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav-item-toggable btn-team">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="https://github.com/blinktrade" target="_blank">
+                <i class="fa fa-github"></i>
+                GitHub
+              </a>
+            </li>
+            <li class="navbar-divider hidden-sm-down"></li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="mailto:contact@blinktrade.com" target="_blank">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        <!-- /.wrapper -->
+      </div>
+    </nav>
 
-            <!-- .slide -->
-            <div class="slide">
-                <div class="wrapper">
-                    <!-- .slide-nav -->
-                    <ul class="slide-nav">
-                        <li>
-                            <!-- .slide-nav-item -->
-                            <div class="slide-nav-item">
-                                <!-- .slide-nav-item__body -->
-                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
-                                    <!-- .slide-nav-item__title -->
-                                    <h1 class="slide-nav-item__title gamma">
-                                        We provide <strong> bitcoin technology</strong> for remittance companies.
-                                        <span style="display: none">
-                                            Instant deposits to verified accounts allow traders to deposit bitcoins only when they want to trade.
-                                        </span>
-                                    </h1>
-                                    <!-- /.slide-nav-item__title -->
-                                </div>
-                                <!-- /.slide-nav-item__body -->
+    <!-- NavScroll -->
 
-                                <!-- .slide-nav-item__foot -->
-                                <div class="slide-nav-item__foot">
-                                    <a class="btn btn--primary btn--demo" href="https://testnet.blinktrade.com/" title="See our demo">SEE OUR DEMO</a>
-                                    <a class="btn btn--secondary" href="#started" title="Get started">GET STARTED</a>
-                                </div>
-                                <!-- /.slide-nav-item__foot -->
-                            </div>
-                            <!-- /.slide-nav-item -->
-                        </li>
-                        <li>
-                            <!-- .slide-nav-item -->
-                            <div class="slide-nav-item">
-                                <!-- .slide-nav-item__body -->
-                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
-                                    <!-- .slide-nav-item__title -->
-                                    <h1 class="slide-nav-item__title gamma">
-                                        100% <strong>Open source</strong> technology.
-                                        <span style="display: none">
-                                            An <strong>open source</strong> bitcoin exchange. Start your own bitcoin exchange today.
-                                        </span>
-                                    </h1>
-                                    <!-- /.slide-nav-item__title -->
-                                </div>
-                                <!-- /.slide-nav-item__body -->
+    <!-- Hero Section
+    ================================================== -->
 
-                                <!-- .slide-nav-item__foot -->
-                                <div class="slide-nav-item__foot">
-                                    <a class="btn btn--primary btn--demo" href="https://testnet.blinktrade.com/" title="See our demo">SEE OUR DEMO</a>
-                                    <a class="btn btn--secondary" href="#started" title="Get started">GET STARTED</a>
-                                </div>
-                                <!-- /.slide-nav-item__foot -->
-                            </div>
-                            <!-- /.slide-nav-item -->
-                        </li>
-                        <li>
-                            <!-- .slide-nav-item -->
-                            <div class="slide-nav-item">
-                                <!-- .slide-nav-item__body -->
-                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
-                                    <!-- .slide-nav-item__title -->
-                                    <h1 class="slide-nav-item__title gamma">
-                                        Take advantage of the <strong>speed and security</strong> of the Bitcoin protocol in your remittance operations.
-                                        <span style="display: none">
-                                            <strong>No REST, no HTTP,</strong> no Workarounds that open security breaches. Just a simplewebsockets API based on the FixProtocol
-                                        </span>
-                                    </h1>
-                                    <!-- /.slide-nav-item__title -->
-                                </div>
-                                <!-- /.slide-nav-item__body -->
+    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
 
-                                <!-- .slide-nav-item__foot -->
-                                <div class="slide-nav-item__foot">
-                                    <a class="btn btn--primary btn--demo" href="https://testnet.blinktrade.com/" title="See our demo">SEE OUR DEMO</a>
-                                    <a class="btn btn--secondary" href="#started" title="Get started">GET STARTED</a>
-                                </div>
-                                <!-- /.slide-nav-item__foot -->
-                            </div>
-                            <!-- /.slide-nav-item -->
-                        </li>
-                        <li>
-                            <!-- .slide-nav-item -->
-                            <div class="slide-nav-item">
-                                <!-- .slide-nav-item__body -->
-                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
-                                    <!-- .slide-nav-item__title -->
-                                    <h1 class="slide-nav-item__title gamma">
-                                        We <strong>take care of the technology</strong> so you can focus on operations.
-                                        <span style="display: none">
-                                            <strong>Transparent</strong> just like Bitcoin. 100% open source, no anonymous/hidden orders that just open doors to market manipulation.
-                                        </span>
-                                    </h1>
-                                    <!-- /.slide-nav-item__title -->
-                                </div>
-                                <!-- /.slide-nav-item__body -->
+      <div class="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-media">
+          <video autoplay loop class="fillWidth" poster="/assets/img/bg-header.jpg">
+            <source src="{{ site.url }}/assets/video/blinktrade.mp4" type="video/mp4" />
+            <source src="{{ site.url }}/assets/video/blinktrade.webm" type="video/webm" />
+          </video>
+        </div>
+      </div>
 
-                                <!-- .slide-nav-item__foot -->
-                                <div class="slide-nav-item__foot">
-                                    <a class="btn btn--primary btn--demo" href="https://testnet.blinktrade.com/" title="See our demo">SEE OUR DEMO</a>
-                                    <a class="btn btn--secondary" href="#started" title="Get started">GET STARTED</a>
-                                </div>
-                                <!-- /.slide-nav-item__foot -->
-                            </div>
-                            <!-- /.slide-nav-item -->
-                        </li>
-                        <li>
-                            <!-- .slide-nav-item -->
-                            <div class="slide-nav-item">
-                                <!-- .slide-nav-item__body -->
-                                <div class="slide-nav-item__body one-whole lap--seven-tenths desk--one-half">
-                                    <!-- .slide-nav-item__title -->
-                                    <h1 class="slide-nav-item__title gamma">
-                                        The <strong>cheapest and fastest technology</strong>  to leverage your business.
-                                        <span style="display: none">
-                                            <strong>Fast</strong>, 35 milliseconds order
-                                            ACK time. 20 months of development Built with the same architecture of the NYSE.
-                                        </span>
-                                    </h1>
-                                    <!-- /.slide-nav-item__title -->
-                                </div>
-                                <!-- /.slide-nav-item__body -->
-
-                                <!-- .slide-nav-item__foot -->
-                                <div class="slide-nav-item__foot">
-                                    <a class="btn btn--primary btn--demo" href="https://testnet.blinktrade.com/" title="See our demo">SEE OUR DEMO</a>
-                                    <a class="btn btn--secondary" href="#started" title="Get started">GET STARTED</a>
-                                </div>
-                                <!-- /.slide-nav-item__foot -->
-                            </div>
-                            <!-- /.slide-nav-item -->
-                        </li>
-                    </ul>
-                    <!-- /.slide-nav -->
-
-                    <!-- .slide-pause -->
-                    <div class="slide-pause"></div>
-                    <!-- /.slide-pause -->
-                </div>
-            </div>
-            <!-- /.slide -->
+      <div class="video-content container">
+        <div class="row">
+          <div class="col-lg-8 col-xs-12 col-lg-offset-2">
+            <h1 class="display-3 wp-sequence-1 wp wp-1">OPEN YOUR OWN BITCOIN EXCHANGE</h1>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="m-b-3 col-xs-12 wp-sequence-1 wp wp-1">We provide <strong> bitcoin technology</strong> for remittance companies</h2>
+        </div>
+        <a class="btn btn-secondary-outline m-b-1 btn-getstarted wp-sequence-1 wp wp-1" href="" role="button">GET STARTED</a>
+        <ul class="nav nav-inline social-share">
+          <li class="nav-item">
+            <a class="nav-link"  onclick="window.open(this.href, 'Tweet','left=200,top=200,width=500,height=500,toolbar=1,resizable=0');return false;"
+              href="http://twitter.com/share?text=BlinkTrade%20-%20open%20your%20own%20bitcoin%20exchange">
+              <span class="fa fa-twitter"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/blinktrade/" target="_blank">
+              <span class="fa fa-github"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
-	<!-- /.head -->
-
