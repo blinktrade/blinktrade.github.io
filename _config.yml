@@ -4,7 +4,7 @@ email: contact@blinktrade.com
 description: "BlinkTrade - Open your own bitcoin exchange"
 keywords: "BlinkTrade, Bitcoin, Exchange, Open Source"
 baseurl: ""
-url: "//localhost:4000"
+url: "//blinktrade.com"
 
 # Build settings
 markdown: kramdown
