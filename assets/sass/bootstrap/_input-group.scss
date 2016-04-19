@@ -90,7 +90,7 @@
   line-height: 1;
   color: $input-color;
   text-align: center;
-  background-color: $input-group-addon-bg;
+  background-color: #fff;
   border: $input-btn-border-width solid $input-group-addon-border-color;
   @include border-radius($border-radius);
 

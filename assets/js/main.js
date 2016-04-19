@@ -125,11 +125,13 @@
         $('.navbar').addClass("bg-white");
         $('.navbar').removeClass("bg-inverse-custom");
         $('.navbar .logo').attr('src', 'assets/img/logo-p.png');
+        $('.navbar-divider').css('background-color', 'rgba(66, 71, 83, 0.24)');
       } else {
         $('.navbar').position("position", "absolute");
         $('.navbar').addClass("bg-inverse-custom");
         $('.navbar').removeClass("bg-white");
         $('.navbar .logo').attr('src', 'assets/img/logo-p-white.png');
+        $('.navbar-divider').css('background-color', 'rgba(255,255,255,0.2)');
       }
     })
   }

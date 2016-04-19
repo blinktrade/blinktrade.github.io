@@ -4,7 +4,7 @@
   height: 100%;
   max-height: 100%;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGAQMAAADaAn0LAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlOZx9MQq3gAAAANSURBVAjXY1jBwADDAA3UAfm003WfAAAAAElFTkSuQmCC) repeat!important;
-  opacity: .8;
+  opacity: .6;
   top: 0;
   left: 0;
   z-index: 2;
@@ -18,6 +18,9 @@
   top: 0;
   z-index: 1;
   overflow: hidden;
+  mix-blend-mode: screen;
+  filter: hue-rotate(10deg) brightness(1) saturate(4);
+  -webkit-filter: hue-rotate(10deg) brightness(1) saturate(4);
 
   video {
     position: absolute;
