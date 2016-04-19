@@ -19,8 +19,6 @@
   z-index: 1;
   overflow: hidden;
   mix-blend-mode: screen;
-  filter: hue-rotate(10deg) brightness(1) saturate(4);
-  -webkit-filter: hue-rotate(10deg) brightness(1) saturate(4);
 
   video {
     position: absolute;
