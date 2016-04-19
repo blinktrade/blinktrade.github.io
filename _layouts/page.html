@@ -1,14 +1,19 @@
-{% include header-inner.html %}
+{% include header.html %}
 
-<div class="main page">
-	<div class="wrapper">
-		<header class="main__head">
-			<h1 class="main__title beta">{{ page.title }}</h1>
-		</header>
-		<div class="main__body">
-			<p>{{ content }}</p>
-		</div>
-	</div>
-</div>
+<base href='../' />
+
+<section class="section-features">
+  <div class="container">
+    <div class="wrapper">
+      <header class="main__head">
+        <h1 class="main__title beta display-3">{{ page.title }}</h1>
+      </header>
+      <div class="main__body">
+        <p>{{ content }}</p>
+      </div>
+    </div>
+    <a href="/">BACK</a>
+  </div>
+</section>
 
 {% include footer.html %}
