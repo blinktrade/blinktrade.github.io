@@ -1,10 +1,10 @@
 # Site settings
-title: 'BlinkTrade Inc.'
+title: 'BlinkTrade'
 email: contact@blinktrade.com
-description: "BlinkTrade - Open your own bitcoin exchange"
+description: "BlinkTrade - The Blockchain Financial Network For The Masses"
 keywords: "BlinkTrade, Bitcoin, Exchange, Open Source"
 baseurl: ""
-url: "//blinktrade.com"
+url: "https://blinktrade.com"
 
 # Build settings
 markdown: kramdown
