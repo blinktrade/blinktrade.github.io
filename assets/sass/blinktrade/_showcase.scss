@@ -1,0 +1,27 @@
+#showcase {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(49, 47, 56, 0.15);
+}
+
+#map {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.section-exchanges {
+  padding-top: 22px;
+  padding-bottom: 4rem;
+}
+
+.logo-text {
+  margin-bottom: 0!important;
+}
+
+.logo-wrap {
+  min-height: 65px;
+}
+
+.logo-image {
+  max-height: 67px;
+}

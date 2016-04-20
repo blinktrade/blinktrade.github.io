@@ -11,6 +11,12 @@
   @include media-breakpoint-up(sm) {
     @include border-radius($navbar-border-radius);
   }
+
+  .container {
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
 }
 
 
