@@ -1532,7 +1532,7 @@ figure { position: relative; }
 
       @include media-breakpoint-down(sm) {
         display: block;
-        text-align: right;
+        text-align: center;
       }
 
       @include media-breakpoint-up(xl) {
