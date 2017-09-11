@@ -11,7 +11,6 @@ markdown: kramdown
 
 source: .
 destination: ./_site
-plugins: ./_plugins
 paginate: 5
 paginate_path: "blog/page:num"
 
